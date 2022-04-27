@@ -1,7 +1,6 @@
 import 'package:vitamins_app/components/fav_btn.dart';
 import 'package:vitamins_app/components/price.dart';
 import 'package:vitamins_app/models/Product.dart';
-import 'package:vitamins_app/screens/Details/details_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -51,7 +50,7 @@ class ProductCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Price(amount: "10.000"),
-                FavBtn(),
+                Expanded(child: FavBtn()),
               ],
             )
           ],

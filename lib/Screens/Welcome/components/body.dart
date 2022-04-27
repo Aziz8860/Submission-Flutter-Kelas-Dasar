@@ -7,6 +7,8 @@ import 'package:vitamins_app/constants.dart';
 import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget {
+  const Body({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -30,9 +32,7 @@ class Body extends StatelessWidget {
               press: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => LoginScreen()
-                  ),
+                  MaterialPageRoute(builder: (context) => LoginScreen()),
                 );
               },
             ),
@@ -43,9 +43,7 @@ class Body extends StatelessWidget {
               press: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => SignUpScreen()
-                  ),
+                  MaterialPageRoute(builder: (context) => SignUpScreen()),
                 );
               },
             ),

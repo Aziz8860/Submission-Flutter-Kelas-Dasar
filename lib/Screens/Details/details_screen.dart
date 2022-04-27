@@ -88,7 +88,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
             child: Padding(
               padding: const EdgeInsets.all(defaultPadding),
               child: Text(
-                "Cabbage (comprising several cultivars of Brassica oleracea) is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads. It is descended from the wild cabbage (B. oleracea var. oleracea)",
+                "Manfaat vitamin cecara umum untuk kesehatan tubuh sangat beragam. Vitamin sendiri memiliki fungsi yang membantu mengatur metabolisme, mencegah penyakit kronis, memelihara nafsu makan, kesehatan mental dan kekebalan tubuh. ",
                 style: TextStyle(
                   color: Color(0xFFBDBDBD),
                   height: 1.8,
@@ -114,7 +114,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
         style: TextStyle(color: Colors.black),
       ),
       actions: [
-        FavBtn(radius: 20),
+        Expanded(child: FavBtn(radius: 20)),
         SizedBox(width: defaultPadding),
       ],
     );
